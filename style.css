@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+
+    display: grid;
+    place-items: center;
+}
+
+.cake {
+    height: 50%;
+    cursor: pointer;
+}
+
+.cake .candle {
+    fill: #FFB819;
+    opacity: 0;
+    transition: .7s ease-in-out .3s;
+}
+
+
+.active .candle {
+    opacity: 1;
+}
