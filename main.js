@@ -1,6 +1,12 @@
-const cake = document.querySelector(".cake");
+const candles = document.getElementsByClassName("candle");
+const fires = document.getElementsByClassName("fire");
 
 
-cake.addEventListener("click", (e) => {
-    cake.classList.toggle("active");
-});
+
+for (let i = 0; i < candles.length; i++) {
+
+    candles[i].addEventListener("mouseenter", e => {
+        fires[i].classList.toggle("active");
+    });
+}
+
